@@ -4,8 +4,6 @@ members = [
     "server",
     "shared-types",
     "frontend",
-    "embed-wasm",
-    "embed-wasm-build",
 ]
 
 exclude = [

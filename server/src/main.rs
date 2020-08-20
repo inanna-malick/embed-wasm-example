@@ -50,7 +50,6 @@ async fn main() {
         .and(warp::path("counter"))
         .and(warp::body::content_length_limit(1024 * 16)) // arbitrary? what if I just drop this?
         .and(warp::body::json())
-        // .end() why is this commented out?
         .and_then(|req: IncrementReq| async move {
             let state = get_state();
             let mut counter = state.write().await;

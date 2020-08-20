@@ -5,8 +5,8 @@ authors = ["inanna malick <inanna@recursion.wtf>"]
 edition = "2018"
 
 [dependencies]
-embed-wasm = { path = "../embed-wasm" }
+embed-wasm = { path = "../../embed-wasm/embed-wasm" }
 phf = "0.8.0"
 
 [build-dependencies]
-embed-wasm-build = { path = "../embed-wasm-build"}
+embed-wasm-build = { path = "../../embed-wasm/embed-wasm-build"}
