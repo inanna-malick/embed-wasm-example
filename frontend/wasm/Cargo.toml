@@ -9,7 +9,7 @@ shared-types = { path = "../../shared-types" }
 serde = "1"
 serde_derive = "1"
 stdweb = "0.4"
-yew = { version = "0.14", features = ["std_web"] }
+yew = { version = "0.17.3", features = ["std_web", "services"], default-features = false }
 
 # empty workspace
 [workspace]

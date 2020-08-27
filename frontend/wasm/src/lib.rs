@@ -6,9 +6,9 @@ use yew::{html, Component, ComponentLink, Html, Properties, ShouldRender, format
 
 #[derive(Debug)]
 pub struct State {
+    props: Arg,
     counter_state: u32,
     link: ComponentLink<Self>,
-    fetch_service: FetchService,
     increment_task: Option<FetchTask>,
 }
 
@@ -30,9 +30,18 @@ impl Component for State {
     fn create(arg: Self::Properties, link: ComponentLink<Self>) -> Self {
         State {
             counter_state: arg.initial_counter_state,
-            fetch_service: FetchService::new(),
+            props: arg,
             increment_task: None,
             link,
+        }
+    }
+
+    fn change(&mut self, props: Self::Properties) -> ShouldRender {
+        if self.props != props {
+            self.props = props;
+            true
+        } else {
+            false
         }
     }
 
@@ -56,7 +65,7 @@ impl Component for State {
                     },
                 );
 
-                let task = self.fetch_service.fetch(request, callback).expect("creating task failed");
+                let task = FetchService::fetch(request, callback).expect("creating task failed");
                 self.increment_task = Some(task);
 
                 // no need to redraw

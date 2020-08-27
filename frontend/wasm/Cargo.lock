@@ -37,16 +37,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1b20b618342cf9891c292c4f5ac2cde7287cc5c87e87e9c769d617793607dec1"
 
 [[package]]
-name = "bincode"
-version = "1.2.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5753e2a71534719bf3f4e57006c3a4f0d2c672a4b676eec84161f763eca87dbf"
-dependencies = [
- "byteorder",
- "serde",
-]
-
-[[package]]
 name = "boolinator"
 version = "2.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -57,12 +47,6 @@ name = "bumpalo"
 version = "3.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1f359dc14ff8911330a51ef78022d376f25ed00248912803b58f00cb1c27f742"
-
-[[package]]
-name = "byteorder"
-version = "1.3.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "08c48aae112d48ed9f069b33538ea9e3e90aa263cfa3d1c24309612b1f7472de"
 
 [[package]]
 name = "bytes"
@@ -394,13 +378,12 @@ checksum = "daf76fe7d25ac79748a37538b7daeed1c7a6867c92d3245c12c6222e4a20d639"
 
 [[package]]
 name = "yew"
-version = "0.14.3"
+version = "0.17.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2e48bc6b264e30362e5d420cd6aa2cd24dd4c9131284bc24afc0a41c28c125f3"
+checksum = "882b275d108d2280dbc588a8ad6c9690d806fcd299d63b68d702ff4d848fdc0c"
 dependencies = [
  "anyhow",
  "anymap",
- "bincode",
  "cfg-if",
  "cfg-match",
  "http",
@@ -420,9 +403,9 @@ dependencies = [
 
 [[package]]
 name = "yew-macro"
-version = "0.14.1"
+version = "0.17.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "074c652331c32cf6431b0c5c4b6cb6fbb2168a1be6022e51b32c95fefb70153c"
+checksum = "61a9a452e63b6222b28b426dafbc6b207192e0127cdb93324cc7407b8c7e1768"
 dependencies = [
  "boolinator",
  "lazy_static",

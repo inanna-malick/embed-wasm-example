@@ -507,7 +507,9 @@ checksum = "bb1f6b1ce1c140482ea30ddd3335fc0024ac7ee112895426e0a629a6c20adfe3"
 
 [[package]]
 name = "embed-wasm"
-version = "0.1.0-alpha"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d0c4bcd88d307f7165a72136fd0825fe74cc652f4d9faa243fcb5206246ef42f"
 dependencies = [
  "headers",
  "hyper 0.13.4",
@@ -517,7 +519,9 @@ dependencies = [
 
 [[package]]
 name = "embed-wasm-build"
-version = "0.1.0-alpha"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2dc59b0cee5ea6420150e6489bd110beb32965409ef4e452cc756694e806e43e"
 dependencies = [
  "cargo-web",
  "ignore",
